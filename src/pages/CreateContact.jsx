@@ -35,23 +35,23 @@ export const CreateContact = () => {
           <h2>Add a new contact</h2>
 
           <div className="mb-3">
-            <label htmlFor="name" className="form-label fw-semibold">Full Name</label>
-            <input onChange={handleChange} type="text" className="form-control" id="name" placeholder="Full Name" required></input>
+            <label htmlFor="name" className="form-label fw-semibold">Name</label>
+            <input onChange={handleChange} type="text" className="form-control" id="name" placeholder="Name" required></input>
           </div>
 
           <div className="mb-3">
             <label htmlFor="email" className="form-label fw-semibold">Email</label>
-            <input onChange={handleChange} type="email" className="form-control" id="email" placeholder="Enter email" required></input>
+            <input onChange={handleChange} type="email" className="form-control" id="email" placeholder="Email" required></input>
           </div>
 
           <div className="mb-3">
             <label htmlFor="phone" className="form-label fw-semibold">Phone</label>
-            <input onChange={handleChange} type="tel" className="form-control" id="phone" placeholder="Enter phone" required></input>
+            <input onChange={handleChange} type="tel" className="form-control" id="phone" placeholder="Phone" required></input>
           </div>
 
           <div className="mb-4">
             <label htmlFor="address" className="form-label fw-semibold">Address</label>
-            <input onChange={handleChange} type="text" className="form-control" id="address" placeholder="Enter address" required></input>
+            <input onChange={handleChange} type="text" className="form-control" id="address" placeholder="Address" required></input>
           </div>
         </div>
         <div className="row justify-content-center">

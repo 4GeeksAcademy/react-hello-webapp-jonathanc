@@ -44,7 +44,7 @@ export const Home = () => {
 								</div>
 
 								<div className="col-auto align-self-start d-flex gap-3">
-									<Link to= "/edit" state={{contact:contact}} className="btn btn-link p-0 text-dark">
+									<Link to={`/edit/${contact.id}`} state={{contact:contact}} className="btn btn-link p-0 text-dark">
 										<i className="fa-solid fa-pencil"></i>
 									</Link>
 									<button className="btn btn-link p-0 text-dark" onClick={() => deleteAgenda(contact.id, dispatch)}>

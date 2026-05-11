@@ -92,7 +92,7 @@ export const createContact = async (nuevoContacto, dispatch) => {
     }
 }
 
-export const editContact = async (editarContacto, id, dispatch)=> {
+export const editContact = async (id, editarContacto,  dispatch)=> {
     try {
         const resp = await fetch(`https://playground.4geeks.com/contact/agendas/jonathanc130/contacts/${id}`, {
             method: 'PUT',
