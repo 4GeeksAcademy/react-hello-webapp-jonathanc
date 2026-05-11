@@ -30,9 +30,9 @@ export const EditContact = () => {
 
     const navigate = useNavigate()
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault()
-         await editContact(contact.id, contact, dispatch)
+        editContact(contact.id, contact, dispatch)
         navigate('/')
     }
 
@@ -60,7 +60,7 @@ export const EditContact = () => {
                         </div>
                     </div>
                     <div className="row justify-content-center">
-                        <button type = "submit" className="btn btn-primary col-md-8 col-lg-6">
+                        <button className="btn btn-primary col-md-8 col-lg-6">
                             Edit
                         </button>
                     </div>

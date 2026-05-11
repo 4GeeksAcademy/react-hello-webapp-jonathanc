@@ -9,8 +9,7 @@ export const Home = () => {
 	const { store, dispatch } = useGlobalReducer()
 	const { contacts } = store
 	useEffect(() => {
-
-		//getAllUsers(dispatch)
+		
 		getAgenda(dispatch)
 	}, []);
 	
